@@ -3,45 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Rédaction</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        header, footer { background: #333; color: #fff; padding: 1em; text-align: center; }
-        main { padding: 2em; }
-        .contact-form { max-width: 600px; margin: 0 auto; }
-        .contact-form input, .contact-form textarea { width: 100%; margin: 0.5em 0; padding: 0.5em; }
-        .contact-form button { padding: 0.5em 2em; }
-    </style>
+    <title>La Rédaction - Services de Rédaction et Traduction</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue chez La Rédaction</h1>
+        <h1>Bienvenue sur "La Rédaction"</h1>
+        <p>Votre Partenaire en Rédaction et Traduction Professionnelle</p>
     </header>
+
     <main>
-        <section>
-            <h2>À propos</h2>
-            <p>La Rédaction est un cabinet spécialisé dans les services de rédaction pour des clients variés.</p>
+        <section id="services">
+            <h2>Nos Services</h2>
+            <ul>
+                <li>
+                    <h3>Rédaction de Mémoires Académiques</h3>
+                    <p>Nous offrons un service de <strong>rédaction de mémoires académiques</strong> de haute qualité, conçu pour répondre aux exigences rigoureuses des institutions académiques.</p>
+                </li>
+                <li>
+                    <h3>Rédaction de Rapports de Stage</h3>
+                    <p>La <strong>rédaction de rapports de stage</strong> est une étape cruciale dans votre parcours académique et professionnel.</p>
+                </li>
+                <li>
+                    <h3>Rédaction de Thèses</h3>
+                    <p>Pour les étudiants en doctorat, nous proposons un service de <strong>rédaction de thèses</strong>.</p>
+                </li>
+                <li>
+                    <h3>SEO (Search Engine Optimization)</h3>
+                    <p>Améliorez la visibilité de votre site web avec notre service de <strong>SEO</strong>.</p>
+                </li>
+                <li>
+                    <h3>Traduction Anglais-Français et Français-Anglais</h3>
+                    <p>Nos services de <strong>traduction</strong> sont conçus pour répondre à tous vos besoins linguistiques.</p>
+                </li>
+                <li>
+                    <h3>Accompagnement Personnalisé</h3>
+                    <p>Nous offrons également un service d'<strong>accompagnement personnalisé</strong>.</p>
+                </li>
+            </ul>
         </section>
-        <section>
-            <h2>Services</h2>
-            <p>Nous offrons des services de rédaction, de révision et de correction.</p>
+
+        <section id="testimonials">
+            <h2>Témoignages de Clients</h2>
+            <div class="testimonial">
+                <p>"J'ai fait appel à 'La Rédaction' pour la rédaction de mon mémoire de master. Le résultat a dépassé mes attentes. Le document était bien structuré, clair et parfaitement rédigé. Je recommande vivement leurs services." - <strong>Marie D.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Les services de traduction de 'La Rédaction' sont excellents. J'ai eu besoin de traduire plusieurs documents techniques du français à l'anglais, et le travail a été réalisé avec précision et rapidité. Merci pour votre professionnalisme." - <strong>Jean P.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Grâce à l'accompagnement personnalisé de 'La Rédaction', j'ai pu finaliser ma thèse avec succès. Leur équipe m'a soutenu à chaque étape du processus, offrant des conseils précieux et des révisions détaillées. Un service exceptionnel." - <strong>Lucie M.</strong></p>
+            </div>
         </section>
-        <section>
-            <h2>Témoignages</h2>
-            <p>Découvrez ce que nos clients disent de nous.</p>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
-                <input type="text" name="name" placeholder="Votre nom" required>
-                <input type="email" name="_replyto" placeholder="Votre email" required>
-                <textarea name="message" placeholder="Votre message" required></textarea>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute demande de renseignements ou pour discuter de vos besoins en rédaction et traduction, n'hésitez pas à nous contacter :</p>
+            <ul>
+                <li><strong>Email</strong> : <a href="mailto:redactionprocontact@gmail.com">redactionprocontact@gmail.com</a></li>
+                <li><strong>Téléphone</strong> : +229 6383 8182</li>
+            </ul>
+            <form id="contact-form">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
                 <button type="submit">Envoyer</button>
             </form>
         </section>
     </main>
+
     <footer>
-        <p>© 2024 La Rédaction</p>
+        <p>&copy; 2024 La Rédaction. Tous droits réservés.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
